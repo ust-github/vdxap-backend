@@ -43,7 +43,7 @@ ln -sf /usr/local/bin/helm3 /usr/local/bin/helm
    sh script: 'helm repo add vdxap-backend https://artifactory.dagility.com/artifactory/helm --username $USER --password $PASS ', label: 'rvsu01' 
 }
         sh script: 'helm repo update', label: 'mesfnb'
-        sh script: 'helm upgrade vdxap-backend-deployment vdxap-backend/vdxap-backend-chart --install --values chart-values.yaml --namespace default', label: 'ixxrui'
+        sh script: 'helm upgrade vdxap-backend-deployment vdxap-backend/vdxap-backend-chart --install --values chart-values.yaml --namespace habitat-test-5', label: 'ixxrui'
       } //end steps
     } // end stage Deploy
   }
